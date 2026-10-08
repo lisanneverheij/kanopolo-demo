@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kanopolo — maak kennis met de sport</title>
+  <meta name="description" content="Nog nooit van kanopolo gehoord? Ontdek wat de sport inhoudt en hoe je het zelf kunt proberen.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Kano<span>polo</span></a>
+      <nav class="site-nav">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="wat-is-kanopolo.html">Wat is kanopolo?</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tekst">
+        <span class="kicker">🔥 De leukste watersport die je nog niet kende</span>
+        <h1>Een teamsport in een kano. Sneller en ruiger dan je denkt.</h1>
+        <p>
+          Kanopolo is een snelle teamsport op het water waarbij je in een kano
+          probeert te scoren in het doel van de tegenstander. Nog nooit van
+          gehoord? Dat is precies waarom deze site er is.
+        </p>
+        <a class="btn" href="wat-is-kanopolo.html">Ontdek wat kanopolo is</a>
+      </div>
+      <div class="hero-beeld" aria-hidden="true">
+        <svg viewBox="0 0 300 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animatie van een kanopoloer die een eskimorol maakt">
+          <defs>
+            <radialGradient id="gloed" cx="50%" cy="50%" r="50%">
+              <stop offset="0%" stop-color="#ffffff" stop-opacity="0.35"/>
+              <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <clipPath id="clipBoven">
+              <rect x="0" y="0" width="300" height="150"/>
+            </clipPath>
+            <clipPath id="clipOnder">
+              <rect x="0" y="150" width="300" height="90"/>
+            </clipPath>
+            <g id="boot-vorm">
+              <path d="M20 180 C70 160, 230 160, 280 180 L250 195 C200 180, 100 180, 50 195 Z" fill="#ef8354"/>
+              <rect x="140" y="110" width="8" height="90" rx="4" fill="#ffffff" transform="rotate(18 144 155)"/>
+              <ellipse cx="118" cy="118" rx="16" ry="7" fill="#ffffff" transform="rotate(18 118 118)"/>
+              <ellipse cx="176" cy="164" rx="16" ry="7" fill="#ffffff" transform="rotate(18 176 164)"/>
+              <circle cx="150" cy="140" r="22" fill="#073b4c"/>
+            </g>
+          </defs>
+
+          <circle cx="150" cy="150" r="95" fill="url(#gloed)" class="gloed"/>
+          <ellipse cx="150" cy="150" rx="140" ry="18" fill="#ffffff" opacity="0.12"/>
+          <rect x="0" y="150" width="300" height="90" fill="#118ab2" opacity="0.18"/>
+          <path d="M10 150 Q40 144 70 150 T130 150 T190 150 T250 150 T300 150" stroke="#ffffff" stroke-width="3" fill="none" opacity="0.6"/>
+
+          <g class="bubbels">
+            <circle cx="70" cy="200" r="4"/>
+            <circle cx="105" cy="210" r="3"/>
+            <circle cx="205" cy="205" r="3.5"/>
+            <circle cx="235" cy="195" r="4.5"/>
+            <circle cx="150" cy="215" r="3"/>
+          </g>
+
+          <g clip-path="url(#clipBoven)">
+            <g class="roller">
+              <use href="#boot-vorm"/>
+            </g>
+          </g>
+          <g clip-path="url(#clipOnder)">
+            <g class="roller roller-onder">
+              <use href="#boot-vorm"/>
+            </g>
+          </g>
+
+          <g class="splash">
+            <circle cx="92" cy="150" r="5" fill="#ffffff"/>
+            <circle cx="150" cy="149" r="4" fill="#ffffff"/>
+            <circle cx="208" cy="150" r="5" fill="#ffffff"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <section class="blok">
+    <div class="container">
+      <h2>Waarom kanopolo het proberen waard is</h2>
+      <div class="kaarten">
+        <div class="kaart">
+          <div class="icoon">🚣</div>
+          <h3>Snel en actief</h3>
+          <p>Veel beweging in korte tijd: sprinten, draaien, aanvallen en verdedigen volgen elkaar snel op.</p>
+        </div>
+        <div class="kaart">
+          <div class="icoon">🤝</div>
+          <h3>Samen spelen</h3>
+          <p>Je speelt in een team van vijf. Samenspel en positiekeuze zijn minstens zo belangrijk als kracht.</p>
+        </div>
+        <div class="kaart">
+          <div class="icoon">🏊</div>
+          <h3>Voor beginners toegankelijk</h3>
+          <p>Je hoeft geen ervaren kanovaarder te zijn om te beginnen. Basistechniek leer je spelenderwijs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="blok licht">
+    <div class="container">
+      <h2>Benieuwd hoe het werkt?</h2>
+      <p>
+        Op de volgende pagina leggen we uit hoe een wedstrijd eruitziet,
+        welke materialen je nodig hebt en wat de belangrijkste spelregels zijn.
+      </p>
+      <a class="btn" href="wat-is-kanopolo.html">Lees verder</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Deze site is gemaakt om mensen kennis te laten maken met kanopolo.</p>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <button id="chat-toggle" class="chat-knop" aria-expanded="false" aria-controls="chat-paneel">
+      💬 <span class="chat-knop-tekst">Vraag het de kanopolo-assistent</span>
+    </button>
+    <div id="chat-paneel" class="chat-paneel" role="dialog" aria-label="Kanopolo-assistent (demo)">
+      <div class="chat-header">
+        <strong>Kanopolo-assistent</strong>
+        <span class="chat-badge">demo</span>
+      </div>
+      <div id="chat-berichten" class="chat-berichten">
+        <div class="chat-bericht bot">Hoi! Stel me een vraag over kanopolo — bijvoorbeeld over de regels, het materiaal, veiligheid of hoe je kunt beginnen.</div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Typ je vraag..." autocomplete="off">
+        <button type="submit">Stuur</button>
+      </form>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+
+</body>
+</html>

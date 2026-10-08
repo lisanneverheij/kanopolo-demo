@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact — vraag het ons</title>
+  <meta name="description" content="Stel je vraag over kanopolo via het contactformulier.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a class="logo" href="index.html">Kano<span>polo</span></a>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="wat-is-kanopolo.html">Wat is kanopolo?</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-tekst">
+        <h1>Contact</h1>
+        <p>
+          Heb je een vraag over kanopolo, of wil je weten waar je het in de
+          buurt kunt proberen? Vul het formulier in, dan reageren we zo snel
+          mogelijk.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="blok">
+    <div class="container">
+      <form class="contact-form" action="https://formsubmit.co/lisanne.verheij@topicus.nl" method="POST">
+        <input type="hidden" name="_subject" value="Nieuw contactbericht via de kanopolo-site">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="bedankt.html">
+
+        <div class="form-veld">
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="Naam" required>
+        </div>
+
+        <div class="form-veld">
+          <label for="email">E-mailadres</label>
+          <input type="email" id="email" name="E-mailadres" required>
+        </div>
+
+        <div class="form-veld">
+          <label for="bericht">Je vraag of bericht (optioneel)</label>
+          <textarea id="bericht" name="Bericht" rows="4"></textarea>
+        </div>
+
+        <button type="submit" class="btn">Versturen</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Deze site is gemaakt om mensen kennis te laten maken met kanopolo.</p>
+    </div>
+  </footer>
+
+  <div class="chat-widget">
+    <button id="chat-toggle" class="chat-knop" aria-expanded="false" aria-controls="chat-paneel">
+      💬 <span class="chat-knop-tekst">Vraag het de kanopolo-assistent</span>
+    </button>
+    <div id="chat-paneel" class="chat-paneel" role="dialog" aria-label="Kanopolo-assistent (demo)">
+      <div class="chat-header">
+        <strong>Kanopolo-assistent</strong>
+        <span class="chat-badge">demo</span>
+      </div>
+      <div id="chat-berichten" class="chat-berichten">
+        <div class="chat-bericht bot">Hoi! Stel me een vraag over kanopolo — bijvoorbeeld over de regels, het materiaal, veiligheid of hoe je kunt beginnen.</div>
+      </div>
+      <form id="chat-form" class="chat-form">
+        <input id="chat-input" type="text" placeholder="Typ je vraag..." autocomplete="off">
+        <button type="submit">Stuur</button>
+      </form>
+    </div>
+  </div>
+  <script src="chat.js"></script>
+
+</body>
+</html>
