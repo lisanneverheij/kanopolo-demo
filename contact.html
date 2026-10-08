@@ -35,10 +35,8 @@
 
   <section class="blok">
     <div class="container">
-      <form class="contact-form" action="https://formsubmit.co/lisanneverheij@hotmail.com" method="POST">
-        <input type="hidden" name="_subject" value="Nieuw contactbericht via de kanopolo-site">
-        <input type="hidden" name="_template" value="table">
-        <input type="hidden" name="_next" value="bedankt.html">
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" action="bedankt.html">
+        <input type="hidden" name="form-name" value="contact">
 
         <div class="form-veld">
           <label for="naam">Naam</label>
